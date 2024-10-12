@@ -183,16 +183,32 @@ let arrowLeft = document.querySelector(".left");
 let arrowRight = document.querySelector(".right");
 
 arrowUp.addEventListener("click", function () {
-  eventMoveDescription = "ArrowUp";
+  if (eventMoveDescription === "ArrowDown") {
+    eventMoveDescription = "ArrowDown";
+  } else {
+    eventMoveDescription = "ArrowUp";
+  }
 });
 arrowDown.addEventListener("click", function () {
-  eventMoveDescription = "ArrowDown";
+  if (eventMoveDescription === "ArrowUp") {
+    eventMoveDescription = "ArrowUp";
+  } else {
+    eventMoveDescription = "ArrowDown";
+  }
 });
 arrowLeft.addEventListener("click", function () {
-  eventMoveDescription = "ArrowLeft";
+  if (eventMoveDescription === "ArrowRight") {
+    eventMoveDescription = "ArrowRight";
+  } else {
+    eventMoveDescription = "ArrowLeft";
+  }
 });
 arrowRight.addEventListener("click", function () {
-  eventMoveDescription = "ArrowRight";
+  if (eventMoveDescription === "ArrowLeft") {
+    eventMoveDescription = "ArrowLeft";
+  } else {
+    eventMoveDescription = "ArrowRight";
+  }
 });
 
 let time;
