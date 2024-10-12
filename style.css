@@ -85,6 +85,10 @@ body {
   cursor: pointer;
 }
 
+.arrows__box {
+  margin-top: -30px;
+}
+
 .box__arrow, .box__arrow-up-down {
   font-size: 120px;
 }
