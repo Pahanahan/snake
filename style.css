@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.cell__box {
+  background-color: rgb(6, 2, 243);
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 480px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+}
+
+.wall {
+  background-color: black;
+}
+
+.cell__point {
+  background-color: red;
+}
+
+.cell__head {
+  background-color: green;
+  z-index: 100;
+}
+
+.cell__body {
+  background-color: #26b946;
+}
+
+.cell__tail {
+  background-color: #26b946;
+}
+
+.end {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: red;
+  height: 400px;
+  width: 400px;
+  z-index: 200;
+}
+
+.hidden {
+  display: none;
+}
+
+.low {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #c7dd4d;
+  width: 400px;
+  height: 100px;
+  border: 5px, solid, #000;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.again {
+  padding: 10px;
+  background-color: #fff;
+  border: 2px, solid, rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box__arrow, .box__arrow-up-down {
+  font-size: 120px;
+}
+
+.up, .down, .left, .right {
+  padding: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 530px) {
+  .cell__box {
+    max-width: 432px;
+  }
+  
+  .cell {
+    width: 36px;
+    height: 36px;
+  }
+
+  .end {
+    height: 360px;
+    width: 360px;
+  }
+
+  .box__arrow, .box__arrow-up-down {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 460px) {
+  .cell__box {
+    max-width: 360px;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .end {
+    height: 300px;
+    width: 300px;
+    font-size: 24px;
+  }
+
+  .box__arrow, .box__arrow-up-down {
+    font-size: 90px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .cell__box {
+    max-width: 312px;
+  }
+  
+  .cell {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .end {
+    height: 260px;
+    width: 260px;
+    font-size: 22px;
+  }
+
+  .box__arrow, .box__arrow-up-down {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 350px) {
+  .cell__box {
+    max-width: 264px;
+  }
+  
+  .cell {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .end {
+    height: 220px;
+    width: 220px;
+    font-size: 20px;
+  }
+
+  .box__arrow, .box__arrow-up-down {
+    font-size: 50px;
+  }
+}
+
